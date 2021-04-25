@@ -10,9 +10,10 @@ export class UsersService<U extends { email: string }> {
     }
 
     async create({ email }: U) {
-        const repository = getCustomRepository(UsersRepository);
-        return await repository.findOne({ email }) ?? repository.save({ ...new User(), email });
-
+        return await this.repository.findOne({ email }) ?? this.repository.save({ ...new User(), email });
     }
 
+    async findByEmail({ email }: U) {
+        return await this.repository.findOne({ email });
+    }
 }

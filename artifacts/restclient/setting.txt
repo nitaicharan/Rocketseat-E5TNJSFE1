@@ -1,0 +1,28 @@
+@endpoint = settings
+@port = 3333
+@hostname = localhost
+@host = http://{{hostname}}:{{port}}
+@contentType = application/json
+
+# @name create
+
+POST {{host}}/{{endpoint}}
+content-type: {{contentType}}
+
+{
+	"chat": true,
+	"username": "admin"
+}
+
+###
+
+# @update
+
+@username = {{create.response.body.username}}
+
+PUT {{host}}/{{endpoint}}/{{username}}
+content-type: {{contentType}}
+
+{
+	"chat": false
+}

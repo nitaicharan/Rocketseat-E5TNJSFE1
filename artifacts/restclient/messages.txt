@@ -1,0 +1,28 @@
+@endpoint = messages
+@port = 3333
+@hostname = localhost
+@host = http://{{hostname}}:{{port}}
+@contentType = application/json
+
+###
+# @name users
+
+POST {{host}}/users
+content-type: application/json
+Data: {{$id}}
+
+{
+	"email": "nitaicharan"
+}
+
+###
+# @name messages
+
+POST {{host}}/{{endpoint}}
+content-type: application/json
+
+{
+	"text": "hello. I need help",
+	"admin_id": "94d249e4-b384-4aa2-91ff-42c65347d045",
+	"user_id": "{{users.response.body.id}}"
+}

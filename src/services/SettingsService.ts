@@ -18,4 +18,15 @@ export class SettingsService {
         return await this.repository.findOne({ username }) ?? this.repository.save({ ...new Setting(), username, chat });
     }
 
+    async findByUsername({ username }) {
+        return await this.repository.findOne({ username });
+    }
+
+    async update({ username, chat }: ISettingsCreate) {
+        await this.repository.createQueryBuilder()
+            .update(Setting)
+            .set({ chat })
+            .where('username = :username', { username })
+            .execute();
+    }
 }

@@ -13,7 +13,7 @@ export class MessagesController {
     async fetchByUser(request: Request<{ user_id: string }>, response: Response): Promise<Response> {
         const service = new MessagesService();
 
-        const entity = await service.listByUser(request.params);
+        const entity = await service.listByUserId(request.params);
         return response.json(entity);
     }
 }

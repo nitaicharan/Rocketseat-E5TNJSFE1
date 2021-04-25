@@ -1,0 +1,12 @@
+@endpoint = users
+@port = 3333
+@hostname = localhost
+@host = http://{{hostname}}:{{port}}
+@contentType = application/json
+
+POST {{host}}/{{endpoint}}
+content-type: {{contentType}}
+
+{
+	"email": "nitaicharan"
+}
