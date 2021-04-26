@@ -8,7 +8,7 @@ interface IMessageCreate {
     user_id: string,
 }
 
-export class MessagesService<LBU extends { user_id: string }> {
+export class MessagesService {
     private repository: Repository<Message>;
 
     constructor() {
@@ -19,7 +19,7 @@ export class MessagesService<LBU extends { user_id: string }> {
         return await this.repository.save({ ...new Message(), admin_id, text, user_id });
     }
 
-    async listByUserId({ user_id }: LBU) {
+    async listByUserId({ user_id }) {
         return await this.repository.find({
             where: { user_id },
             relations: ['user'],

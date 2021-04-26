@@ -21,15 +21,13 @@
         </div>
 
         <div class="text_support">
-            <script id="email-template" type="text/template">
+            <script id="message-user-template" type="text/template">
                 <div class="client">
                     <span class="name">{{email}}</span>
-            </script>
-            <script id="message-user-template" type="text/template">
-                <span class="client message">
-              {{message}}
+                    <span class="client message">
+                        {{message}}
               <!-- <label class="date">{{date}}</label> -->
-            </span>
+                    </span>
                 </div>
             </script>
             <script id="admin-template" type="text/template">
@@ -62,12 +60,11 @@
                 <span>Como podemos te ajudar?</span>
                 <textarea name="txt_help" id="txt_help" cols="30" rows="10" onkeydown="keyUpTextHelp(event)" maxlength="250"></textarea>
                 <span class="charac_remaining">
-            <label id="charac_remaining">250</label> caracteres restantes</span
-          >
-        </div>
+                    <label id="charac_remaining">250</label> caracteres restantes</span>
+            </div>
 
-        <div class="first_email">
-          <span>Seu e-mail</span>
+            <div class="first_email">
+                <span>Seu e-mail</span>
                 <input type="text" name="" id="email" />
             </div>
 
@@ -80,8 +77,8 @@
 
     <div>
         <button class="btn_support" id="btn_support" onclick="openChat();">
-        <img src="/images/chat.png" /> Suporte
-      </button>
+            <img src="/images/chat.png" /> Suporte
+        </button>
     </div>
 </body>
 
