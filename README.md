@@ -9,8 +9,8 @@
 
 <p align="center">:bangbang: Project available to access at: https://nitaicharan.github.io/Rocketseat-E5TNJSFE1 :bangbang:</p>
 
-<!--[![](Rocketseat-E5TNJSFE1.png)](https://nitaicharan.github.io/Rocketseat-E5TNJSFE1/)-->
-<a href="https://nitaicharan.github.io/Rocketseat-E5TNJSFE1">
+<!--[![](PREVIEW.png)](https://nitaicharan.github.io/Rocketseat-E5TNJSFE1//)-->
+<a href="https://nitaicharan.github.io/Rocketseat-E5TNJSFE1/">
   <p align="center">
     <img style="height: 100px" src="PREVIEW.png">
   </p>
@@ -22,11 +22,8 @@ This project was part of the Rocketseat event "Edição 5 - Trilha Node.Js Back-
 
 - [Course][course-url]
 - [Instructor][instructor-url]
-- [Certificate][certificate-url]
 
-### Certificate
-
-This certificate above verifies that [Nitai Charan][udemy-url] successfully completed the course [Edição 5 - Trilha Node.Js Back-end][course-url] on ??/??/???? as taught by [Daniele Leão][instructor-url] on Rocketseat. The certificate indicates the entire course was completed as validated by the student.
+### 
 
 <p align="center">
   <img src="CERTIFICATE.jpg">
@@ -44,7 +41,7 @@ This certificate above verifies that [Nitai Charan][udemy-url] successfully comp
 ## Development GitHub Pages
 
 ```
-ng build --prod --base-href=/Rocketseat-E5TNJSFE1/
+ng build --prod --base-href=/Rocketseat-E5TRJSFE1/
 
 git add -A
 git commit -m <tittle> <message>
@@ -61,8 +58,8 @@ git push origin `git subtree split --prefix dist/course master`:gh-pages --force
 
 <!-- ALIAS README -->
 
-[course-url]: https://nextlevelweek.com/episodios/node/1/edicao/5
-[instructor-url]: https://linkedin.com/in/daniele-le%C3%A3o-evangelista-5540ab25
+[course-url]: https://nextlevelweek.com/episodios/react/1/edicao/5
+[instructor-url]: https://linkedin.com/in/diego-schell-fernandes
 [certificate-url]: #
 
 <!-- CONTACT SHIELDS -->
